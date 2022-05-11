@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@400;500;700&display=swap");
+iframe {
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3b4d5e;
+  margin-block: 2rem;
+  overflow: hidden;
+  font-family: 'IBM Plex Sans Hebrew', sans-serif;
+}
+
+#root .logo {
+  font-size: 10rem;
+  margin-bottom: 10rem;
+  color: #fff;
+  text-align: center;
+}
+
+#root #cardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 10rem;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#root #cardContainer .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 2rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  background-color: #455a6e;
+  padding: 2rem 4rem;
+  gap: 2rem;
+  background-color: #e5e5f7;
+  background: #455a6e;
+  background: linear-gradient(184deg, #455a6e 0%, #0e2944 100%);
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 4px 5px 10px 6px rgba(43, 81, 110, 0.35);
+  box-shadow: 0px 10px 13px -7px #000000, 4px 5px 10px 6px rgba(43, 81, 110, 0.35);
+}
+
+#root #cardContainer .card .productImg {
+  width: 20rem;
+  height: 15rem;
+}
+
+#root #cardContainer .card .productTitle {
+  font-size: 6rem;
+  color: white;
+  font-weight: 900;
+}
+
+#root #cardContainer .card .productPrice {
+  font-size: 4rem;
+  color: white;
+  font-weight: 500;
+}
+
+#root #cardContainer .card .btn {
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: #e95035;
+  color: white;
+  font-weight: 500;
+  font-family: 'IBM Plex Sans Hebrew', sans-serif;
+  -webkit-transition: background-color 0.5s ease-in-out,-webkit-transform 0.1s ease-in-out;
+  transition: background-color 0.5s ease-in-out,-webkit-transform 0.1s ease-in-out;
+  transition: background-color 0.5s ease-in-out,transform 0.1s ease-in-out;
+  transition: background-color 0.5s ease-in-out,transform 0.1s ease-in-out,-webkit-transform 0.1s ease-in-out;
+  cursor: pointer;
+  -webkit-box-shadow: 1rem 0rem 3rem #333;
+          box-shadow: 1rem 0rem 3rem #333;
+}
+
+#root #cardContainer .card .btn:hover {
+  background-color: #b82d14;
+}
+
+#root #cardContainer .card .btn:active {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@400;500;700&display=swap');
+$titleFS: 10rem;
+$imgWidth: 20rem;
+$imgHeight: 15rem;
+$bodyBG: hsl(209, 23%, 30%);
+$cardBG: #455a6e;
+$cardTitleFS: 6rem;
+$cardPriceFS: 4rem;
+$cardBtnFS: 3rem;
+
+
+iframe{
+    border: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:$bodyBG;
+    margin-block:2rem;
+    overflow: hidden;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+}
+#root{
+    .logo{
+        font-size: $titleFS;
+        margin-bottom: 10rem;
+        color: #fff;
+        text-align: center;
+    }
+    #cardContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+        gap: 10rem;
+        opacity: 0;
+        transition: all 1s ease;
+        
+        .card{
+            display: flex;
+            border-radius: 2rem;
+            justify-content: flex-start;
+            align-items: center;
+            flex-flow: column nowrap;
+            background-color: $cardBG;
+            padding: 2rem 4rem;
+            gap: 2rem;
+            background-color: #e5e5f7;
+            background: rgb(69,90,110);
+            background: linear-gradient(184deg, rgba(69,90,110,1) 0%, rgba(14,41,68,1) 100%);
+            -webkit-box-shadow: 0px 10px 13px -7px #000000, 4px 5px 10px 6px rgba(43,81,110,0.35); 
+box-shadow: 0px 10px 13px -7px #000000, 4px 5px 10px 6px rgba(43,81,110,0.35);
+            .productImg{
+                width: $imgWidth;
+                height: $imgHeight;
+            }
+            .productTitle{
+                font-size: $cardTitleFS;
+                color: white;
+                font-weight: 900;
+            }
+            .productPrice{
+                font-size: $cardPriceFS;
+                color: white;
+                font-weight: 500;
+            }
+            .btn{
+                font-size: $cardBtnFS;
+                padding: 1rem 2rem;
+                border: none;
+                border-radius: 1.5rem;
+                background-color: hsl(9, 80%, 56%);
+                color: white;
+                font-weight: 500;
+                font-family: 'IBM Plex Sans Hebrew', sans-serif;
+                transition: background-color 0.5s ease-in-out,transform 0.1s ease-in-out;
+                cursor: pointer;
+                box-shadow: 1rem 0rem 3rem #333;
+            }
+            .btn:hover{
+                background-color: hsl(9, 80%, 40%);
+            }
+            .btn:active{
+                transform: translateY(0.2rem);
+            }
+        }
+    }
+}
