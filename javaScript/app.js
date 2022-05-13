@@ -6,7 +6,7 @@ let productBtn;
 
 let btnArray;
 
-fetch("http://localhost:3004/products")
+fetch("/products.json")
 	.then((response) => response.json())
 	.then((data) => drawSite(data));
 
@@ -71,7 +71,7 @@ function btnClicked(event){
     let element = event.target;
     let json ;
     if(element.classList[0] === 'btn'){
-        fetch('http://localhost:3004/discount').then(response => response.json()).then(data => message(data,event))
+        fetch('/discount.json').then(response => response.json()).then(data => message(data,event))
     }
 }
 
