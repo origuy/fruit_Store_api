@@ -1,0 +1,24 @@
+{
+	"products": [{
+			"img": "assets\\banana.png",
+			"name": "בננה",
+			"price": "5.9₪"
+		},
+		{
+			"img": "assets\\Watermelon.png",
+			"name": "אבטיח",
+			"price": "15.9₪"
+		},
+		{
+			"img": "assets\\Orange.png",
+			"name": "תפוז",
+			"price": "8.9₪"
+		},
+		{
+			"img": "assets\\GREEN APPLE.png",
+			"name": "תפוח עץ",
+			"price": "9.9₪"
+		}
+
+	]
+}
