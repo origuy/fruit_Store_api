@@ -1,6 +1,4 @@
 
-![logo](assets/Ori Logo.png)
-
 # Arranging products - API Assiment
 
 I built an API to simulate the connection with the server.
