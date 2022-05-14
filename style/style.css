@@ -118,4 +118,36 @@ body {
   -webkit-transform: translateY(0.2rem);
           transform: translateY(0.2rem);
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-y: scroll;
+    margin-bottom: 3rem;
+  }
+  #root .logo {
+    font-size: 8rem;
+    margin-bottom: 8rem;
+    color: #fff;
+    text-align: center;
+  }
+  #root #cardContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    gap: 10rem;
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+}
 /*# sourceMappingURL=style.css.map */
