@@ -1,6 +1,5 @@
 
-![Logo](assets/Ori Logo.png)
-
+![logo](assets/Ori Logo.png)
 
 # Arranging products - API Assiment
 
